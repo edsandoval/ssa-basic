@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ssa-basic</string>
+    <string name="max_inactivity">Inactivity (in Hours):</string>
+    <string name="sms_hint">
+    	Phone
+    </string>
+    <array name="nro_of_hours_of_inactivity">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+        <item>Nine</item>
+        <item>Ten</item>
+    </array>
+    <string name="unlock_code_hint">
+    	Code to stop the app
+    </string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sensor.alert.MainActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/back"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                <TextView
+                        android:id="@+id/max_inactivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="5dp"
+                        android:text="@string/max_inactivity" />
+
+                <Spinner
+                        android:id="@+id/nro_inactivity_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:entries="@array/nro_of_hours_of_inactivity"
+                        android:prompt="@string/max_inactivity" />
+            </RelativeLayout>
+
+            <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint="@string/sms_hint"
+                    android:inputType="phone"
+                    android:paddingTop="10dp" />
+
+
+            <EditText
+                    android:id="@+id/unlock_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint="@string/unlock_code_hint"
+                    android:inputType="textPassword"
+                    android:paddingTop="10dp" />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <Button
+                        android:id="@+id/btnStartService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/centerPoint"
+                        android:text="Start Service" />
+
+                <TextView
+                        android:id="@+id/centerPoint"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="" />
+
+                <Button
+                        android:id="@+id/btnStopService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/centerPoint"
+                        android:text="Stop Service" />
+
+            </RelativeLayout>
+
+            <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/unnamed" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

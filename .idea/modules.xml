@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ssa-basic/app" />
+      <module fileurl="file://$PROJECT_DIR$/ssa-basic.iml" filepath="$PROJECT_DIR$/ssa-basic.iml" group="ssa-basic" />
+    </modules>
+  </component>
+</project>
